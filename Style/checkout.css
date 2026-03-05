@@ -1,0 +1,325 @@
+/* Genel Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f5f0;
+}
+
+/* Checkout Sayfası Konteyneri */
+.cart-container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #5e3614;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #5e3614;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* Checkout Container Layout */
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.checkout-details {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.order-summary {
+  flex: 1 1 30%;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+}
+
+/* Checkout Section Styles */
+.checkout-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Address Section Styles */
+.saved-addresses {
+  margin-bottom: 20px;
+}
+
+.address-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.address-card:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.address-card.selected {
+  border-color: #5e3614;
+  background-color: #faf6f0;
+}
+
+.address-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.address-header label {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.address-content p {
+  margin: 5px 0;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #444;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.secondary-button {
+  background-color: #f0f0f0;
+  color: #5e3614;
+  border: 1px solid #5e3614;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.secondary-button:hover {
+  background-color: #e8e8e8;
+}
+
+.save-button {
+  background-color: #5e3614;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #4d2c10;
+}
+
+.cancel-button {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.cancel-button:hover {
+  background-color: #e8e8e8;
+}
+
+/* Payment Section Styles */
+.save-card-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.save-card-info input {
+  margin-right: 10px;
+}
+
+/* Order Summary Styles */
+.summary-products {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.summary-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.product-quantity {
+  color: #666;
+  margin: 0;
+  font-size: 14px;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.summary-totals {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.checkout {
+  background-color: #5e3614;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.checkout:hover {
+  background-color: #4d2c10;
+}
+
+.back-to-cart {
+  background-color: transparent;
+  color: #5e3614;
+  text-decoration: underline;
+  padding: 5px;
+  width: 100%;
+}
+
+/* -------- Responsive Tasarım -------- */
+
+/* Orta ekranlar için (Tablet - 992px ve altı) */
+@media (max-width: 992px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  .order-summary {
+    position: static;
+  }
+}
+
+/* Küçük ekranlar için (Mobil - 768px ve altı) */
+@media (max-width: 768px) {
+  .cart-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .checkout-section {
+    padding: 15px;
+  }
+}
+
+/* Çok küçük ekranlar için (480px ve altı) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .checkout {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

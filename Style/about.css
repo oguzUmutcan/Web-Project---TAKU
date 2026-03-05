@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.about-us {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-us h2 {
+  color: #444;
+  font-size: 28px;
+  margin: 20px 0 10px;
+}
+
+.about-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-us ul li {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.about-us .about-mission,
+.about-us .about-vision,
+.about-us .about-values,
+.about-us .about-team {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.about-us .about-mission:hover,
+.about-us .about-vision:hover,
+.about-us .about-values:hover,
+.about-us .about-team:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding: 20px;
+  }
+
+  .about-us h1 {
+    font-size: 28px;
+  }
+
+  .about-us h2 {
+    font-size: 22px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+  }
+}
+
+.privacy-policy {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.policy-title {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  margin: 0;
+  padding: 15px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.policy-title:hover {
+  background-color: #333;
+}
+
+.policy-content {
+  display: none;
+  padding: 20px;
+  font-size: 16px;
+  color: #444;
+  text-align: left;
+}

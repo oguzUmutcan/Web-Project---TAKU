@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - TAKU - Mobilya & Dekor</title>
+    <link rel="stylesheet" href="../Style/userLogin.css">
+    <link rel="icon" href="../Images/TAKU (2).png"
+        type="image/x-icon" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login-box">
+
+            <form action="../php/login.php" class="was-validated" method="post">
+                <h2>Giriş Yap</h2>
+                <div class="input-box">
+                    <input type="email" id="email" name="email" required>
+                    <label>Email</label>
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" name="password" required>
+                    <label>Şifre</label>
+                    <span id="password-error" class="error-message"></span>
+                </div>
+                <div class="forgot-pass">
+                    <a href="../adminPage/forgotPassword.php?adminOrUser='user'">Parolanı mı unuttun?</a>
+                </div>
+                <button type="submit" class="btn">
+                    Giriş
+                </button>
+                <div class="signup-link">
+                Hesabın yok mu?    <a href="../userOperations/userSignUp.php">Kayıt Ol</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../scripts/userLogin.js">
+    </script>
+
+</body>
+
+</html>

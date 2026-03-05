@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kullanım Şartları</title>
+    <link rel="stylesheet" href="../Style/termsOfUse.css">
+
+    <link rel="icon" href="../Images/TAKU (2).png"
+        type="image/x-icon" />
+  <link rel="icon" href="../Images/TAKU (2).png"
+        type="image/x-icon" />
+
+</head>
+<body>
+    <section class="policy-section">
+      <h3 class="policy-title">Kullanım Şartları</h3>
+      <div class="policy-content">
+        <p>
+          Web sitemizi kullanarak aşağıdaki şartları kabul etmiş sayılırsınız:
+        </p>
+        <ul>
+          <li>
+            Sağlanan tüm içerik yalnızca bilgi amaçlıdır ve değişiklik
+            yapılabilir.
+          </li>
+          <li>
+            Kullanıcılar, web sitesini hukuka uygun şekilde kullanmakla
+            yükümlüdür.
+          </li>
+          <li>Web sitemizdeki içeriklerin izinsiz kopyalanması yasaktır.</li>
+        </ul>
+        <p>
+          Daha fazla bilgi için bizimle iletişime geçin:
+          <a href="mailto:support@websitemiz.com">support@websitemiz.com</a>
+        </p>
+      </div>
+    </section>
+
+    <script >
+      const policyTitle = document.querySelector(".policy-title");
+      const policyContent = document.querySelector(".policy-content");
+
+      policyTitle.addEventListener("click", () => {
+        if (policyContent.style.display === "block") {
+          policyContent.style.display = "none";
+        } else {
+          policyContent.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>

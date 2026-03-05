@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    min-height: 100vh;
+    background-color: #b39f9f;
+}
+
+.container {
+    background-image: url('/Images/promotion/background.png');
+    display: flex;
+    width: 97%;
+    height: fit-content;
+    margin: 20px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.container .content{
+    border-radius: 15px;
+    padding-left: 70px;
+    width: 50%;
+    border: 2px solid white;
+}
+
+.container .content p{
+    width: 80%;
+    text-align: center;
+}
+
+.container .images{
+    width: 50%;
+}
+
+.container .images .product a img{
+    width: 50%;
+    margin-left: 150px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+h2 {
+    font-size: 2em;
+    color: rgb(56, 48, 48);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    text-align: center;
+    font-weight: bolder;
+}
+
+span{
+    text-decoration: line-through;
+    font-weight: initial;
+    color: rgb(56, 48, 48);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content vertically */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .container .content {
+        padding-left: 0; /* Remove left padding */
+        width: 100%; /* Full width */
+    }
+
+    h2 {
+        margin-left: 0; /* Center heading */
+        font-size: 1.8em; /* Adjust font size */
+    }
+
+    .container .images {
+        width: fit-content;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images */
+    }
+
+    .container .images .product {
+        width: 90%; /* Full width for products */
+        margin: 10px 0; /* Add vertical margin */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em; /* Smaller font size for headings */
+    }
+
+    .container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .container .images .product {
+        width: 100%; /* Full width for mobile */
+    }
+
+    p {
+        font-size: 0.9em; /* Adjust paragraph font size */
+    }
+}

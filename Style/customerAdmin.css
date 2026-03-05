@@ -1,0 +1,210 @@
+/* Genel Stil */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #f7f5f0;
+}
+
+.dashboard-container,
+.admin-dashboard {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #5e3614;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar .profile h2 {
+  font-size: 18px;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar .menu li {
+  margin: 15px 0;
+}
+
+.sidebar .menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar .menu li a:hover {
+  background-color: #4a2c11;
+}
+
+.sidebar .menu .logout {
+  color: #ffcccc;
+}
+
+.sidebar .menu .logout:hover {
+  background-color: #ff6666;
+}
+
+/* Ana İçerik Alanı */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.main-content section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content section h2 {
+  font-size: 20px;
+  color: #5e3614;
+  margin-bottom: 10px;
+}
+
+.main-content section p {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Tablo Stili (Yönetici Paneli için) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #5e3614;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a2c11;
+}
+
+/* Profil Yönlendirme ve Genel Stil */
+.redirect {
+  font-size: 14px;
+  color: #5e3614;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.redirect a {
+  color: #a37c53;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redirect a:hover {
+  text-decoration: underline;
+}
+
+input {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+#addAddress {
+  display: none;
+}
+
+#orders {
+  max-width: 800px;
+  /* margin: 2rem auto; */
+  font-family: Arial, sans-serif;
+}
+
+#orders h2 {
+  /* text-align: center; */
+  margin-bottom: 1rem;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #f4f4f4;
+}
+
+.btn-detail {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: #a37c53;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.btn-detail:hover {
+  background-color: #0056b3;
+}
+
+/* Boş durumdaki <p> için */
+#orders p {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
